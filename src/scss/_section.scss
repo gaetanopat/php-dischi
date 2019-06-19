@@ -1,0 +1,27 @@
+section{
+  height: calc(100vh - 50px);
+  width: 100%;
+  /* per le varie card */
+  .card{
+    background-color: black;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0;
+    height: 270px;
+    padding-top: 15px;
+    img{
+      width: 150px;
+      margin: 0 auto;
+      height: 150px;
+    }
+    h4, h5{
+      color: white;
+    }
+    h4{
+      padding: 5px 0 10px;
+    }
+    h5{
+      opacity: 0.6;
+    }
+  }
+}
