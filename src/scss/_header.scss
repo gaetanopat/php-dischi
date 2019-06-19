@@ -2,8 +2,44 @@ header{
   width: 100%;
   height: 50px;
   background-color: black;
-  i{
-    color: #4ad637;
-    font-size: 40px;
+  // per l'header-left
+  .header-left{
+    width: 50%;
+    float: left;
+    // per l'icona di spotify
+    i{
+      color: #4ad637;
+      font-size: 40px;
+    }
+  }
+  // per l'header-right
+  .header-right{
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    select{
+      width: 150px;
+      height: 30px;
+      margin: 0 15px;
+    }
+    // per 'Home'
+    a{
+      text-decoration: none;
+      padding: 7px 20px;
+      color: black;
+      border-radius: 20px;
+      background-color: white;
+      font-weight: bold;
+    }
+    input{
+      width: 16px;
+      height: 16px;
+      margin-right: 5px
+    }
+    span{
+      color: white;
+    }
   }
 }

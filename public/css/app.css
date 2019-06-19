@@ -18,8 +18,8 @@ body {
           align-items: center;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 
 header {
@@ -28,22 +28,62 @@ header {
   background-color: black;
 }
 
-header i {
+header .header-left {
+  width: 50%;
+  float: left;
+}
+
+header .header-left i {
   color: #4ad637;
   font-size: 40px;
+}
+
+header .header-right {
+  width: 50%;
+  float: left;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+
+header .header-right select {
+  width: 150px;
+  height: 30px;
+  margin: 0 15px;
+}
+
+header .header-right a {
+  text-decoration: none;
+  padding: 7px 20px;
+  color: black;
+  border-radius: 20px;
+  background-color: white;
+  font-weight: bold;
+}
+
+header .header-right input {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+header .header-right span {
+  color: white;
 }
 
 section {
   height: calc(100vh - 50px);
   width: 100%;
-  /* per le varie card */
 }
 
 section .card {
   background-color: black;
   width: 200px;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 17px;
   height: 270px;
   padding-top: 15px;
 }

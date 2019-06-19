@@ -11,7 +11,17 @@
   <body>
     <header>
       <div class="container">
-        <i class="fab fa-spotify"></i>
+        <div class="header-left">
+          <i class="fab fa-spotify"></i>
+        </div>
+        <div class="header-right">
+          <a class="home" onclick="return false" href="#">Home</a>
+          <select class="" name="">
+            <option value="">Scegli l'artista</option>
+          </select>
+          <!-- <a class="ordina" onclick="return false" href="#">Ordina per data</a> -->
+          <input type="checkbox" class="ordina" name="" value=""><span> Ordina per data</span>
+        </div>
       </div>
     </header>
 
@@ -30,6 +40,9 @@
     </section>
     <script src="public/js/app.js"></script>
     <!-- template handlebars-->
+    <script id="template_select" type="text/x-handlebars-template">
+      <option value="{{value}}">{{artista}}</option>
+    </script>
     <script id="template_disco" type="text/x-handlebars-template">
       <div class="card">
         <img src="{{copertina}}">
