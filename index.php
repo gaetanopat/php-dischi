@@ -1,4 +1,4 @@
-<!-- <?php include 'data.php' ?> -->
+<!-- <?php include 'database/data.php' ?> -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -19,7 +19,6 @@
           <select class="" name="">
             <option value="">Scegli l'artista</option>
           </select>
-          <!-- <a class="ordina" onclick="return false" href="#">Ordina per data</a> -->
           <input type="checkbox" class="ordina" name="" value=""><span> Ordina per data</span>
         </div>
       </div>
