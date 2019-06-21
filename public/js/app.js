@@ -10732,7 +10732,9 @@ $(document).ready(function () {
 
       $('.home').click(function () {
         // resetto la input checkbox
-        $('.ordina').prop('checked', false);
+        $('.ordina').prop('checked', false); // dopo aver cliccato resetto con l'option di default
+
+        $('select option').first().prop('selected', true);
         visualizzazioneIniziale(dischi);
       }); // quando clicco sulla checkbox 'Ordina per data'
 
